@@ -1,0 +1,57 @@
+$bg-color-main: #0e6190;
+$bg-color-second: rgb(175, 151, 107);
+$font-color-main: #5f6368;
+$font-color-second: rgb(233, 186, 98);
+
+.nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  z-index: 100;
+  background-color: #fff;
+  .nav__logoContainer {
+    flex-basis: 40%;
+    height: 100%;
+    border-bottom: 1px solid $bg-color-main;
+    .nav__logo {
+      width: 150px;
+    }
+  }
+  .nav__menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 60%;
+    height: 100%;
+    border-bottom: 1px solid $font-color-main;
+    .nav__item {
+      .nav__link {
+        color: $font-color-main;
+        text-decoration: none;
+        transition: 0.3s;
+        &:hover {
+          color: $font-color-second;
+        }
+      }
+    }
+    .nav__btnContact {
+      list-style: none;
+      padding: 12px 25px;
+      background-color: $bg-color-main;
+      border-radius: 4px;
+      cursor: pointer;
+      &:hover {
+        .nav__link {
+          color: $font-color-second;
+        }
+      }
+      .nav__link {
+        color: #fff;
+      }
+    }
+  }
+}
