@@ -1,0 +1,119 @@
+$bg-color-main: #0e6190;
+$bg-color-second: rgb(175, 151, 107);
+$font-color-main: #5f6368;
+$font-color-second: rgb(233, 186, 98);
+
+$font-family-text: Google Sans, Helvetica Neue, sans-serif;
+$text-letter-spacing: 0.25px;
+$text-line-height: 20px;
+
+.services {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  overflow: hidden;
+  .services__title {
+    text-align: center;
+    color: $bg-color-main;
+    font-size: 38px;
+    font-family: monospace;
+    margin-bottom: 40px;
+  }
+  .services__description {
+    text-align: center;
+    color: $font-color-main;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .services__titleSM {
+    text-align: center;
+    color: $bg-color-main;
+    font-size: 25px;
+    font-family: monospace;
+    margin-bottom: 40px;
+  }
+  .services__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    .services__card {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 20%;
+      padding: 20px;
+      margin: 20px;
+      background-color: #f8f9fa;
+      border-radius: 4px;
+      box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%),
+        0 2px 6px 2px rgb(60 64 67 / 15%);
+      transition: 0.3s;
+      &:hover {
+        transform: translateY(6px);
+      }
+      .services__cardImage {
+        width: 40%;
+        margin: 20px auto;
+      }
+      .services__cardDescription {
+        text-align: center;
+        color: $font-color-main;
+      }
+      .services__cardDate {
+        text-align: center;
+        color: $font-color-main;
+      }
+      .services__cardButton {
+        width: 100px;
+        height: 40px;
+        margin: 20px auto;
+        cursor: pointer;
+      }
+    }
+  }
+  .slogan {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-image: url("../../assets/footer_image_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    .slogan__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      .slogan__sentence-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .slogan__sentence {
+          font-family: monospace;
+          color: $font-color-second;
+          width: 100%;
+          line-height: 240%;
+          text-align: center;
+          font-size: 24px;
+          height: 100%;
+          padding: 500px;
+          background-color: rgba(#000, 0.5);
+          z-index: 2;
+          .slogan__progLang {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
