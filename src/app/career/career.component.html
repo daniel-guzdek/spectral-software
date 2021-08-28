@@ -1,0 +1,151 @@
+<div class="career">
+  <div class="career__header">
+    <h1 class="career__title">Career</h1>
+    <p class="career__description">
+      We form a group of about 1000 <strong>IT professionals</strong>,
+      <strong>scientists</strong> and <strong>engineers</strong>. We put
+      emphasis on quality, modernity and efficiency of the products we create.
+      Join our team to co-create great projects. See current job openings.
+    </p>
+  </div>
+
+  <div class="panel">
+    <mat-accordion>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title>C++ Senior Developer</mat-panel-title>
+          <mat-panel-description>
+            {{ panelOpenState ? "About this job" : "see more" }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <h1 class="panel__title">Your role:</h1>
+        <ul class="panel__list">
+          <li class="panel__item">
+            Development of C++ applications related to EMV card manufacturing.
+          </li>
+          <li class="panel__item">
+            Programming IT solutions in accordance with good programming
+            practices (Secure Code Programming).
+          </li>
+          <li class="panel__item">
+            Ongoing support in the event that operational problems arise with
+            the system. Managing own tasks, including: ability to independently
+            prioritize and plan tasks, monitor work progress, report results of
+            tasks to peers and supervisor.
+          </li>
+        </ul>
+        <h1 class="panel__title">Our expectations:</h1>
+        <ul class="panel__list">
+          <li class="panel__item">
+            Min. 7 years of experience working on IT projects. Experience in
+            developing solutions using TDD (Test-Driven Development) and CI
+            (Continuous Integration) approaches.
+          </li>
+          <li class="panel__item">
+            Practical knowledge of tools such as Jira, GIT, Gerrit.
+          </li>
+          <li class="panel__item">
+            Practical knowledge of C++ programming language and STL libraries.
+          </li>
+          <li class="panel__item">Knowledge of relational ORACLE databases.</li>
+          <li class="panel__item">
+            Ability to acquire knowledge independently.
+          </li>
+          <li class="panel__item">Knowledge of English min. A1.</li>
+        </ul>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title>Java Senior Developer</mat-panel-title>
+          <mat-panel-description>
+            {{ panelOpenState ? "About this job" : "see more" }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <h1 class="panel__title">Your role:</h1>
+        <ul class="panel__list">
+          <li class="panel__item">
+            Creating microservices using Java 11, Spring Boot, Spring Cloud.
+          </li>
+          <li class="panel__item">Conduct unit tests, perform code reviews.</li>
+          <li class="panel__item">
+            Ongoing support in the event that operational problems arise with
+            the system. Managing own tasks, including: ability to independently
+            prioritize and plan tasks, monitor work progress, report results of
+            tasks to peers and supervisor.
+          </li>
+        </ul>
+        <h1 class="panel__title">Our expectations:</h1>
+        <ul class="panel__list">
+          <li class="panel__item">
+            Min. 8 years of experience as a Java Developer.
+          </li>
+          <li class="panel__item">Advanced knowledge of Java 11</li>
+          <li class="panel__item">Ability to write unit tests - JUnit.</li>
+          <li class="panel__item">
+            Practical knowledge of Spring, Spring Boot, Spring Cloud and REST
+            API.
+          </li>
+          <li class="panel__item">Wide experience working with Docker.</li>
+          <li class="panel__item">Knowledge of English min. A1.</li>
+          <li class="panel__item">
+            Ability to solve problems independently, easy to learn new
+            technologies.
+          </li>
+        </ul>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title>Objective C Senior Developer</mat-panel-title>
+          <mat-panel-description>
+            {{ panelOpenState ? "About this job" : "see more" }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <h1 class="panel__title">Your role:</h1>
+        <ul class="panel__list">
+          <li class="panel__item">Development of C applications.</li>
+          <li class="panel__item">
+            Programming IT solutions in accordance with good programming
+            practices (Secure Code Programming).
+          </li>
+          <li class="panel__item">
+            Ongoing support in the event that operational problems arise with
+            the system. Managing own tasks, including: ability to independently
+            prioritize and plan tasks, monitor work progress, report results of
+            tasks to peers and supervisor.
+          </li>
+        </ul>
+        <h1 class="panel__title">Our expectations:</h1>
+        <ul class="panel__list">
+          <li class="panel__item">
+            Min. 7 years of experience working on IT projects. Experience in
+            developing solutions using TDD (Test-Driven Development) and CI
+            (Continuous Integration) approaches.
+          </li>
+          <li class="panel__item">
+            Practical knowledge of tools such as Jira, GIT, Gerrit.
+          </li>
+          <li class="panel__item">
+            Practical knowledge of C programming language and STL libraries.
+          </li>
+          <li class="panel__item">Knowledge of relational ORACLE databases.</li>
+          <li class="panel__item">
+            Ability to acquire knowledge independently.
+          </li>
+          <li class="panel__item">Knowledge of English min. A1.</li>
+        </ul>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+</div>
+<app-footer></app-footer>
