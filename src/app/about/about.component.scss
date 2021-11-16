@@ -1,0 +1,99 @@
+$bg-color-main: #0e6190;
+$bg-color-second: rgb(175, 151, 107);
+$font-color-main: #5f6368;
+$font-color-second: rgb(233, 186, 98);
+
+$font-family-text: Google Sans, Helvetica Neue, sans-serif;
+$text-letter-spacing: 0.25px;
+$text-line-height: 20px;
+
+.about {
+  box-sizing: border-box;
+  margin-bottom: 200px;
+  overflow: hidden;
+  .about__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f8f9fa;
+    .about__title {
+      text-align: center;
+      color: $bg-color-main;
+      font-size: 38px;
+      font-family: monospace;
+      margin-bottom: 40px;
+    }
+    .about__description {
+      text-align: center;
+      color: $font-color-main;
+      width: 50%;
+      font-size: 17px;
+      letter-spacing: 1.4px;
+      margin-top: 50px;
+      line-height: 220%;
+    }
+  }
+
+  .about__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    height: 400px;
+    &:nth-of-type(odd) {
+      flex-direction: row-reverse;
+    }
+    .about__panel-first {
+      flex-basis: 30%;
+      padding: 20px 30px;
+      border-radius: 6px;
+      .about__subtitle {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: $font-color-second;
+      }
+      .about__description {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        line-height: 200%;
+        letter-spacing: 1.5px;
+      }
+      .about__button {
+        padding: 12px 25px;
+        background-color: $bg-color-main;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.3s;
+        border: none;
+        color: #fff;
+        &:hover {
+          color: $font-color-second;
+        }
+      }
+    }
+    .about__panel-second {
+      flex-basis: 30%;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      background-position: center;
+      background-size: cover;
+      border-radius: 6px;
+    }
+    .about__management {
+      background-image: url("../../assets/about/management_1280.jpg");
+    }
+    .about__services {
+      background-image: url("../../assets/about/services_1280.jpg");
+    }
+    .about__technologies {
+      background-image: url("../../assets/about/technologies_1280.jpg");
+    }
+    .about__partners {
+      background-image: url("../../assets/about/partners_1280.jpg");
+    }
+  }
+}

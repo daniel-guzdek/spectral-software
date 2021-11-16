@@ -1,0 +1,42 @@
+$bg-color-main: #0e6190;
+$bg-color-second: rgb(175, 151, 107);
+$font-color-main: #5f6368;
+$font-color-second: rgb(233, 186, 98);
+
+$font-family-text: Google Sans, Helvetica Neue, sans-serif;
+$text-letter-spacing: 0.25px;
+$text-line-height: 20px;
+
+.career {
+  overflow: hidden;
+  .career__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    background-color: #f8f9fa;
+    .career__title {
+      text-align: center;
+      color: $bg-color-main;
+      font-size: 38px;
+      font-family: monospace;
+      margin-bottom: 40px;
+    }
+    .career__description {
+      text-align: center;
+      color: $font-color-main;
+      width: 50%;
+      font-size: 17px;
+      letter-spacing: 1.4px;
+      line-height: 220%;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+  }
+
+  .panel {
+    width: 80%;
+    margin: 100px auto;
+  }
+}

@@ -8,29 +8,40 @@ $text-letter-spacing: 0.25px;
 $text-line-height: 20px;
 
 .services {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   overflow: hidden;
-  .services__title {
-    text-align: center;
-    color: $bg-color-main;
-    font-size: 38px;
-    font-family: monospace;
-    margin-bottom: 40px;
-  }
-  .services__description {
-    text-align: center;
-    color: $font-color-main;
-    font-size: 15px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+  .services__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    background-color: #f8f9fa;
+    .services__title {
+      text-align: center;
+      color: $bg-color-main;
+      font-size: 38px;
+      font-family: monospace;
+      margin-bottom: 40px;
+    }
+    .services__description {
+      text-align: center;
+      color: $font-color-main;
+      width: 50%;
+      font-size: 17px;
+      letter-spacing: 1.4px;
+      line-height: 220%;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
   }
   .services__titleSM {
     text-align: center;
     color: $bg-color-main;
     font-size: 25px;
     font-family: monospace;
-    margin-bottom: 40px;
+    margin-top: 120px;
+    margin-bottom: 80px;
   }
   .services__cards {
     display: flex;
@@ -114,6 +125,22 @@ $text-line-height: 20px;
           }
         }
       }
+    }
+  }
+
+  .services__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    .services__text {
+      width: 60%;
+      font-size: 17px;
+      color: $font-color-main;
+      letter-spacing: 1.5px;
+      line-height: 220%;
+      text-align: center;
     }
   }
 }

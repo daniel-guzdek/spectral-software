@@ -1,1 +1,8 @@
-<h1>Spectral Software</h1>
+<div *ngIf="showLoadingIndicator" class="loader">
+  <div class="spinner">
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<app-nav></app-nav>
+<router-outlet></router-outlet>

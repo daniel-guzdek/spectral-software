@@ -1,0 +1,76 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.contact .contact__title {
+  color: #0e6190;
+  font-size: 38px;
+  font-family: monospace;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.contact .form-container {
+  width: 60%;
+}
+.contact .form-container .mat-card {
+  box-shadow: none;
+}
+.contact .form-container .mat-card button {
+  color: #fff;
+  width: 130px;
+  padding: 12px 16px;
+  background-color: #0e6190;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact .form-container .mat-card button:hover {
+  color: #e9ba62;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-shadow: none;
+  justify-content: space-between;
+}
+.row .col-md-6 {
+  width: 49.5%;
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    width: 95%;
+  }
+
+  .row .col-md-6 {
+    width: 100%;
+  }
+}
+.full-width {
+  width: 100%;
+}
+
+.email-container {
+  width: 100%;
+}
+
+.email-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+  width: 100%;
+}
+
+mat-form-field {
+  margin-top: 20px;
+}
+
+mat-card-actions {
+  padding-left: 8px;
+  padding-bottom: 12px;
+}/*# sourceMappingURL=contact.component.css.map */

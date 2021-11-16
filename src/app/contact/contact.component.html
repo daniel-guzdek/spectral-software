@@ -1,0 +1,74 @@
+<div class="contact">
+  <h1 class="contact__title">Feel Free To Contact Us</h1>
+  <form [formGroup]="contactFormData" class="form-container">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Contact Form</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="row">
+          <div class="col-md-6">
+            <mat-form-field class="full-width" appearance="fill">
+              <mat-label>First name</mat-label>
+              <input
+                matInput
+                formControlName="firstName"
+                placeholder="First name"
+              />
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <mat-form-field class="full-width" appearance="fill">
+              <mat-label>Last name</mat-label>
+              <input
+                matInput
+                formControlName="lastName"
+                placeholder="Last name"
+              />
+            </mat-form-field>
+          </div>
+          <div class="email-container">
+            <mat-form-field class="full-width email-input" appearance="fill">
+              <mat-label>Enter your email</mat-label>
+              <input
+                matInput
+                placeholder="name@example.com"
+                formControlName="email"
+                type="email"
+                required
+              />
+              <mat-error *ngIf="email.invalid">{{
+                getEmailInputErrorMessage()
+              }}</mat-error>
+            </mat-form-field>
+          </div>
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Subject</mat-label>
+            <mat-select formControlName="subject">
+              <mat-option value="education">Education</mat-option>
+              <mat-option value="business">Business</mat-option>
+              <mat-option value="report bug">Report bug</mat-option>
+              <mat-option value="collaboration">Collaboration</mat-option>
+            </mat-select>
+            <mat-hint align="end">Please select proper subject ^</mat-hint>
+          </mat-form-field>
+        </div>
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>Message</mat-label>
+          <textarea
+            formControlName="message"
+            matInput
+            placeholder="Your message..."
+          ></textarea>
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions>
+        <button (click)="saveForm()" mat-raised-button class="btn-submit">
+          Submit
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,135 @@
+.services {
+  margin-bottom: 200px;
+  overflow: hidden;
+}
+.services .services__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  background-color: #f8f9fa;
+}
+.services .services__header .services__title {
+  text-align: center;
+  color: #0e6190;
+  font-size: 38px;
+  font-family: monospace;
+  margin-bottom: 40px;
+}
+.services .services__header .services__description {
+  text-align: center;
+  color: #5f6368;
+  width: 50%;
+  font-size: 17px;
+  letter-spacing: 1.4px;
+  line-height: 220%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.services .services__titleSM {
+  text-align: center;
+  color: #0e6190;
+  font-size: 25px;
+  font-family: monospace;
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+.services .services__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.services .services__cards .services__card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
+  transition: 0.3s;
+}
+.services .services__cards .services__card:hover {
+  transform: translateY(6px);
+}
+.services .services__cards .services__card .services__cardImage {
+  width: 40%;
+  margin: 20px auto;
+}
+.services .services__cards .services__card .services__cardDescription {
+  text-align: center;
+  color: #5f6368;
+}
+.services .services__cards .services__card .services__cardDate {
+  text-align: center;
+  color: #5f6368;
+}
+.services .services__cards .services__card .services__cardButton {
+  width: 100px;
+  height: 40px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+.services .slogan {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-image: url("../../assets/footer_image_1280.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.services .slogan .slogan__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.services .slogan .slogan__content .slogan__sentence-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.services .slogan .slogan__content .slogan__sentence-container .slogan__sentence {
+  font-family: monospace;
+  color: #e9ba62;
+  width: 100%;
+  line-height: 240%;
+  text-align: center;
+  font-size: 24px;
+  height: 100%;
+  padding: 500px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.services .slogan .slogan__content .slogan__sentence-container .slogan__sentence .slogan__progLang {
+  font-size: 15px;
+}
+.services .services__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.services .services__content .services__text {
+  width: 60%;
+  font-size: 17px;
+  color: #5f6368;
+  letter-spacing: 1.5px;
+  line-height: 220%;
+  text-align: center;
+}/*# sourceMappingURL=services-comp.component.css.map */

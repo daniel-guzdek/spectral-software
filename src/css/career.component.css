@@ -1,0 +1,32 @@
+.career {
+  overflow: hidden;
+}
+.career .career__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  background-color: #f8f9fa;
+}
+.career .career__header .career__title {
+  text-align: center;
+  color: #0e6190;
+  font-size: 38px;
+  font-family: monospace;
+  margin-bottom: 40px;
+}
+.career .career__header .career__description {
+  text-align: center;
+  color: #5f6368;
+  width: 50%;
+  font-size: 17px;
+  letter-spacing: 1.4px;
+  line-height: 220%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.career .panel {
+  width: 80%;
+  margin: 100px auto;
+}/*# sourceMappingURL=career.component.css.map */
